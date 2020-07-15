@@ -1,2 +1,10 @@
 # Neuronal learning rule based on predicting its future activity?
-test 
+
+
+To run the spiking neural networks, go:
+
+!git clone https://github.com/quva-lab/spiking-eqprop.git
+%cd spiking-eqprop
+!source setup.sh
+
+!pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
