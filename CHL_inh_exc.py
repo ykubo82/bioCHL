@@ -1,8 +1,8 @@
 # Author: Yoshimasa Kubo
 # Date: 2020/03/09
 # Updated: 2020/05/07
-# Purpose:  Understanding Contrastive Hebbian Learning　
 # dataset : MNIST 
+# Purpose: CHL with 80% excitatory and 20% inhibitory neurons
 
 import numpy as np
 import scipy as sc
