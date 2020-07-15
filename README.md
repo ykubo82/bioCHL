@@ -3,9 +3,9 @@
 
 To run the spiking neural networks, go:
 ```
-  !git clone https://github.com/quva-lab/spiking-eqprop.git
-  %cd spiking-eqprop
-  !source setup.sh
+  git clone https://github.com/quva-lab/spiking-eqprop.git
+  cd spiking-eqprop
+  source setup.sh
 
-  !pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
+  pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
 ```
