@@ -1,7 +1,8 @@
 # Author: Yoshimasa Kubo
 # Date: 2020/03/09
 # Updated: 2020/05/07
-# dataset : MNIST 
+# Dataset: MNIST 
+# Purpose: CHL with preClamp*(postClamped – postFreePredicted)  
 
 import numpy as np
 import scipy as sc
