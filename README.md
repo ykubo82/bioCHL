@@ -9,3 +9,4 @@ To run the spiking neural networks, go:
 
   pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
 ```
+and replace the codes in the directory 'spiking-eqprop' with our codes.
