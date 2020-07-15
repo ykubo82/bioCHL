@@ -1,6 +1,5 @@
 # Neuronal learning rule based on predicting its future activity?
 
-
 To run the spiking neural networks with the predictions, go:
 ```
   git clone https://github.com/quva-lab/spiking-eqprop.git
