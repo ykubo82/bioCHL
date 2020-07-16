@@ -10,3 +10,11 @@ To run the spiking neural networks with the predictions, go:
 ```
 and replace the codes in the directory 'spiking-eqprop' with our codes.
 These implementations are based on https://github.com/quva-lab/spiking-eqprop 
+
+For our experiments, we used the spkinking neural networks with Optimal Step-Size Adaptation
+(OSA). If you want to run the code, go:
+```
+python demo_mnist_quantized_eqprop.py 
+
+```
+and plese select the #17 model.
