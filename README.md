@@ -23,5 +23,5 @@ So plese enter 17 for our model.
  For CHL_clamped.py, "with_delay13_inp12_clamped_f120_c120_ada" <br/>
  For CHL_inh_exc.py, "with_delay13_inp12_f120_c120_inh_exc_ada" <br/>
  For the spiking neural network, "with_delay18_inp17_pred_spike_ada_lr001001_1000_min10_skip2" <br/>
- *You can change the directory names if you want in the python files. <br/>
+ *You can change the directory names in the python files, if you want. <br/>
 
