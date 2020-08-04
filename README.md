@@ -1,4 +1,4 @@
-# Neuronal learning rule based on predicting its future activity?
+# Neurons learn by predicting its expected future activity to minimize surprise.
 
 To run the spiking neural networks with the predictions, go:
 ```
