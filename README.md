@@ -8,7 +8,7 @@ To run the spiking neural networks with the predictions, go:
 
   pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
 ```
-and replace the codes in the directory 'spiking-eqprop' with our codes.
+and replace the codes in the directory 'spiking-eqprop' with our codes in 'bioCHLspk'.
 These implementations are based on https://github.com/quva-lab/spiking-eqprop 
 
 For our experiments, we used the spkinking neural networks with Optimal Step-Size Adaptation
