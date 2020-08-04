@@ -301,18 +301,18 @@ def train_model(epoch, w, b, learning_rate, gamma, batch_size, update_batch_size
 def run():
 
   ## setting up the hyper parameters 
-  gamma          = 1.0                   # gamma for CHL 
-  free_time      = 120                     # total simulation time for CHL
+  gamma          = 1.0                    # gamma for CHL 
+  free_time      = 120                    # total simulation time for CHL
   clamped_time   = 120
   dt             = 0.1                    # time step for CHL
   epoch          = 601                    # training epoch
-  learning_rate  = [0.03, 0.02]             # learning rate
+  learning_rate  = [0.03, 0.02]           # learning rate
   n_activations  = 100                    # how many examples should be used for activation maps
   pred           = True
 
   batch_size          = 500               # mini-batch size 
   update_batch_size   = 10                # update mini-batch size
-  hidden_size         = [1000]             # hidden size for the network
+  hidden_size         = [1000]            # hidden size for the network
   output_size         = 10                # output size for the network
   input_size          = 784               # input size for the network 28x28 = 784 mnist
   prediction_inp_size = 12                # how many inputs should be used for predictions of dynamics on the free phase
