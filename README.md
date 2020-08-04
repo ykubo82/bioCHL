@@ -19,7 +19,7 @@ python demo_mnist_quantized_eqprop.py
 ```
 and when you run the code, the program ask you like "Enter command or experiment # to run (h for help) >>"  
 So plese enter 17 for our model.
-*Beofre running the program, please create the directories for each model. 
+*Beofre running the program, please create the directories for each model. <br/>
  For CHL_clamped.py, "with_delay13_inp12_clamped_f120_c120_ada" <br/>
  For CHL_inh_exc.py, "with_delay13_inp12_f120_c120_inh_exc_ada" <br/>
  For the spiking neural network, "with_delay18_inp17_pred_spike_ada_lr001001_1000_min10_skip2" <br/>
