@@ -17,5 +17,11 @@ For our experiments, we used the spkinking neural networks with Optimal Step-Siz
 python demo_mnist_quantized_eqprop.py 
 
 ```
-and plese select the #17 model.
+and when you run the code, the program ask you like "Enter command or experiment # to run (h for help) >>"  
+So plese enter 17 for our model.
+*Beofre running the program, please create the directories for each model. 
+ For CHL_clamped.py, "with_delay13_inp12_clamped_f120_c120_ada"
+ For CHL_inh_exc.py, "with_delay13_inp12_f120_c120_inh_exc_ada"
+ For the spiking neural network, "with_delay18_inp17_pred_spike_ada_lr001001_1000_min10_skip2"
+ *You can change the directory names if you want in the python files.
 
