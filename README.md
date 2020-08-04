@@ -1,4 +1,15 @@
 # Neurons learn by predicting its expected future activity to minimize surprise.
+To run  CHL_clamped.py or CHL_inh_exc.py, go:
+
+```
+python CHL_clamped.py 
+
+or 
+
+python CHL_inh_exc.py 
+
+```
+*for these code, please install pytoch and tensorflow.
 
 To run the spiking neural networks with the predictions, go:
 ```
