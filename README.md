@@ -9,7 +9,7 @@ or
 python CHL_inh_exc.py 
 
 ```
-*for these code, please install pytoch and tensorflow.
+*for these codes, please install pytoch and tensorflow.
 
 To run the spiking neural networks with the predictions, go:
 ```
