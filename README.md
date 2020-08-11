@@ -1,12 +1,9 @@
 # Neurons learn by predicting its expected future activity to minimize surprise
-To run  CHL_clamped.py or CHL_inh_exc.py, go:
+To run  CHL_clamped.py, go:
 
 ```
 python CHL_clamped.py 
 
-or 
-
-python CHL_inh_exc.py 
 
 ```
 *for these codes, please install pytoch.
