@@ -1,4 +1,4 @@
-# Neurons learn by predicting its expected future activity to minimize surprise
+# Neurons learn by predicting expected future activity
 To run CHL_inh_exc.py or CHL_clamped.py, go:
 
 ```
