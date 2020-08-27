@@ -1,4 +1,4 @@
-# Neuronal learning rule based on predicting its future activity?
+# Spiking Neural Network with the predictions
 
 To run the spiking neural networks with the predictions, go:
 ```
@@ -8,8 +8,10 @@ To run the spiking neural networks with the predictions, go:
 
   pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
 ```
-and replace the codes in the directory 'spiking-eqprop' with our codes.
-These implementations are based on https://github.com/quva-lab/spiking-eqprop 
+and replace the codes in the directory 'spiking-eqprop' with our codes in 'bioCHLspk'.
+These implementations are based on https://github.com/quva-lab/spiking-eqprop   <br/>
+*If artemis package does not work, please dowonload the latest verstion manually from: <br/>
+https://github.com/QUVA-Lab/artemis/tree/ad2871fae7d986bf10580eec27aee5b7315adad5/artemis 
 
 For our experiments, we used the spkinking neural networks with Optimal Step-Size Adaptation
 (OSA). If you want to run the code, go:
@@ -17,4 +19,9 @@ For our experiments, we used the spkinking neural networks with Optimal Step-Siz
 python demo_mnist_quantized_eqprop.py 
 
 ```
-and plese select the #17 model.
+and when you run the code, the program ask you like "Enter command or experiment # to run (h for help) >>"  
+So plese enter 17 for our model. <br/>
+*Beofre running the program, please create a directory for the model. <br/>
+"with_delay18_inp17_pred_spike_ada_lr001001_1000_min10_skip2" <br/>
+*You can change the directory names in the python files, if you want. <br/>
+
