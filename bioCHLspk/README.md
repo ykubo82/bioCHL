@@ -5,7 +5,10 @@ To run the spiking neural networks with the predictions, go:
   git clone https://github.com/quva-lab/spiking-eqprop.git
   cd spiking-eqprop
   source setup.sh
+  or 
+  pip install -e git+https://github.com/quva-lab/spiking-eqprop.git#egg=spiking-eqprop
 
+  and 
   pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
 ```
 and replace the codes in the directory 'spiking-eqprop' with our codes in 'bioCHLspk'.
