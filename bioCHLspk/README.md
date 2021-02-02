@@ -7,10 +7,11 @@ To run the spiking neural networks with the predictions, go:
   source setup.sh
   or 
   pip install -e git+https://github.com/quva-lab/spiking-eqprop.git#egg=spiking-eqprop
-
-  and 
-  pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
 ```
+and install artemis, go:
+```
+  pip3 install -e git+http://github.com/QUVA-Lab/artemis.git#egg=artemis 
+```  
 and replace the codes in the directory 'spiking-eqprop' with our codes in 'bioCHLspk'.
 These implementations are based on https://github.com/quva-lab/spiking-eqprop   <br/>
 *If artemis package does not work, please dowonload the latest verstion manually from: <br/>
