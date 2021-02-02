@@ -217,6 +217,7 @@ def train_model(epoch, w, b, learning_rate, gamma, batch_size, minibatch_size, f
   if os.path.isfile(directory + '/log.txt'):
     f = open(directory + '/log.txt', 'a')
   else:
+    os.mkdir(directory)    
     f = open(directory + '/log.txt', 'w')
 
   np.save(directory + '/w_epoch_' + str(0) + '.npy', w)    
