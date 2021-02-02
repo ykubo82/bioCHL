@@ -28,3 +28,10 @@ So plese enter 17 for our model. <br/>
 *Beofre running the program, please create a directory for the model. <br/>
 "with_delay18_inp17_pred_spike_ada_lr001001_1000_min10_skip2" <br/>
 *You can change the directory names in the python files, if you want. <br/>
+
+This model tested on: <br/>
+Python 3.7.9 <br/>
+Pytorch 1.7.0 <br/>
+Tensorflow 1.14.0 <br/>
+Sklearn 0.22.1 <br/>
+Numpy 1.18.1 <br/>
