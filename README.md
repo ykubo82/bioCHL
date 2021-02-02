@@ -8,6 +8,6 @@ python CHL_clamped.py
 
 *Beofre running the program, please create the directory for the model. <br/>
  For CHL_clamped.py, "with_delay13_inp12_clamped_f120_c120_ada" <br/>
-*You might get an error because of line #234 (version of your package). So if you get an error, please comment out the line #234 <br/>
+*You might get an error because of line #234. So if you get an error, please comment out the line #234 <br/>
 
 
