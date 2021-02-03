@@ -309,7 +309,7 @@ def run():
   free_time      = 120                    # total simulation time for CHL
   clamped_time   = 120
   dt             = 0.1                    # time step for CHL
-  epoch          = 601                    # training epoch
+  epoch          = 3                      # training epoch
   learning_rate  = [0.03, 0.02]           # learning rate
   n_activations  = 100                    # how many examples should be used for activation maps
   pred           = True
