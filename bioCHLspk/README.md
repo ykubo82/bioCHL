@@ -25,8 +25,9 @@ python demo_mnist_quantized_eqprop.py
 ```
 and when you run the code, the program ask you like "Enter command or experiment # to run (h for help) >>"  
 So plese enter 17 for our model. <br/>
+results_spike
 *Beofre running the program, please create a directory for the model. <br/>
-"with_delay18_inp17_pred_spike_ada_lr001001_1000_min10_skip2" <br/>
+"results_spike" <br/>
 *You can change the directory names in the python files, if you want. <br/>
 
 This model tested on: <br/>
