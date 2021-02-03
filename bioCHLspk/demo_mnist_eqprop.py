@@ -232,6 +232,7 @@ def experiment_mnist_eqprop_torch(
                 if os.path.isfile(directory + '/log.txt'):
                   f = open(directory + '/log.txt', 'a')
                 else:
+                  os.mkdir(directory)          
                   f = open(directory + '/log.txt', 'w')
                   
                 f.write("Epoch: " + str(epoch) + '\n')
