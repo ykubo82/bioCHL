@@ -25,10 +25,8 @@ python demo_mnist_quantized_eqprop.py
 ```
 and when you run the code, the program ask you like "Enter command or experiment # to run (h for help) >>"  
 So plese enter 17 for our model. <br/>
-results_spike
-*Beofre running the program, please create a directory for the model. <br/>
-"results_spike" <br/>
-*You can change the directory names in the python files, if you want. <br/>
+
+*This python code will create a directory "results_spike" to save the results (log.txt) and parameters.
 
 This model tested on: <br/>
 Python 3.7.9 <br/>
