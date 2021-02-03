@@ -1,4 +1,7 @@
 # Neurons learn by predicting future activity
+This is the code to reproduce our results in our manuscripts, Neurons learn by predicting future activity: <br/>
+https://www.biorxiv.org/content/10.1101/2020.09.25.314211v2 <br/>
+
 To run CHL_clamped.py, go:
 
 ```
