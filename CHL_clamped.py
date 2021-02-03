@@ -19,7 +19,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 torch.set_default_tensor_type(torch.cuda.FloatTensor)
 
 ## just in case, please create the directory before runnning
-directory = 'with_delay13_inp12_clamped_f120_c120_ada'
+directory = 'results'
 
 # list for AdaGrad
 dy_squared  = []
