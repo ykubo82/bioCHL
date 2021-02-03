@@ -2,7 +2,7 @@
 # Date: 2020/03/09
 # Updated: 2020/05/07
 # Dataset: MNIST 
-# Purpose: CHL with preClamp*(postClamped – postFreePredicted)  
+# Purpose: Demonstration of network with predictive learning rule   
 
 import numpy as np
 from keras.datasets import mnist
