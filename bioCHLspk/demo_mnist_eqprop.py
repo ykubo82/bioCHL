@@ -35,7 +35,7 @@ Re-implmentation of equilibrium propagation with a functional neuron interface.
 """
 
 ## just in case, please create the directory before runnning this program
-directory = 'with_delay18_inp17_pred_spike_ada_lr001001_1000_min10_skip2'
+directory = 'results_spike'
 
 ## shuffle the data
 ## return shuffled dataset (x and y)
