@@ -10,8 +10,8 @@ python CHL_clamped.py
 *for this code, please install pytoch.
 
 *You might get an error because of line #235 due to sklearn version (works on 0.23.2). So if you get an error, please comment out the line #235 <br/>
-*Additionally, this python code will create a directory, "with_delay13_inp12_clamped_f120_c120_ada" to save the results (log.txt) and parameters.
+*Additionally, this python code will create a directory, "with_delay13_inp12_clamped_f120_c120_ada" to save the results (log.txt) and parameters. <br/>
 
-*Currently, number of epochs is set up to 3 (executin time ~7min). You can change number of epochs to 601 (line #312) for full training.
+*Currently, number of epochs is set up to 3 (executin time ~7min). You can change number of epochs to 601 (line #312) for full training. <br/>
 *if you run it for full training, it will take 21 hours to finish.
 
