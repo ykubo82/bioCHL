@@ -1,18 +1,19 @@
-# Neurons learn by predicting future activity
-This is code to reproduce our results from manuscript: "Neurons learn by predicting future activity":<br/>
-https://www.biorxiv.org/content/10.1101/2020.09.25.314211v2
+# Convolutional Neural Network with the predictions
 
-To run CHL_clamped.py, go:
+These codes are based on "Updates of Equilibrium Prop Match Gradients of Backprop Through Time in an RNN with Static Input" (https://github.com/ernoult/updatesEPgradientsBPTT)
+We modified the codes for our prediction model.
+If you want to run the code, go:
+```
+python main.py 
 
 ```
-python CHL_clamped.py 
-```
-*for this code, please install pytoch.
+The parameters are already set up for our model in the paper. But if you want to change the parameters, please change Line 12 - 154 in main.py <br/>
 
+*This python code will create a directory "ep_conv" to save the results and parameters.
 
-*This python code will create a directory "results" to save the results (log.txt) and parameters.
-
-Currently, number of epochs is set up to 3 (execution time ~7min). You can change number of epochs to 601 (line #312) for full training. <br/>
-*if you run it for full training, it will take 21 hours to finish.<br/>
-
-*You might get an error in line #235 if you are using sklearn version different than # 0.23.2. If you get an error, you can  comment out the line #235, but training data will not be shuffled between epochs.
+This model tested on: <br/>
+Python 3.7.9 <br/>
+Pytorch 1.7.0 <br/>
+Tensorflow 1.14.0 <br/>
+Sklearn 0.22.1 <br/>
+Numpy 1.18.1 <br/>
