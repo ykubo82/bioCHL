@@ -163,8 +163,8 @@ batch_size_test      = args.test_batch_size
 pred_inps            = args.pred_inps
 delay                = args.delay
 
-# append it and use this for getting the activations
-pred_inps_with_delay = pred_inps.append(delay) 
+
+
 
 class ReshapeTransform:
     def __init__(self, new_size):
@@ -232,60 +232,9 @@ elif args.activation_function == 'tanh':
                     
 if __name__ == '__main__':
   
-    #Build the net
-
-    if args.toymodel:
-        net = toyEPcont(args)
-
-    elif (not args.toymodel) & (not args.conv) & (not args.discrete):
-        net = EPcont(args)
-
-        if args.benchmark:
-            net_bptt = EPcont(args)
-            net_bptt.load_state_dict(net.state_dict())
-
-    elif (not args.toymodel) & (not args.conv) & (args.discrete):
-        net = EPdisc(args)
-        if args.benchmark:
-            net_bptt = EPdisc(args)
-            net_bptt.load_state_dict(net.state_dict())        
-
-    elif (not args.toymodel) & (args.conv):      
-        net = convEP(args)
+    net = convEP(args)
       
-                                  
-    if args.action == 'plotcurves':
-
-        #create path              
-        BASE_PATH, name = createPath(args)
-
-        #save hyperparameters
-        createHyperparameterfile(BASE_PATH, name, args)
-
-        if (not args.toymodel):
-            batch_idx, (data, target) = next(enumerate(train_loader))    
-        else:
-            data = torch.rand((args.batch_size, net.size_tab[-1]))
-            target = torch.zeros((args.batch_size, net.size_tab[0]))
-            target[np.arange(args.batch_size), np.random.randint(net.size_tab[0], size = (1,))] = 1
-                  
-        if net.cuda: 
-            data, target = data.to(net.device), target.to(net.device)    
-
-        nS, dS, DT, _ = compute_nSdSDT(net, data, target)
-        NT = compute_NT(net, data, target)
-        nT, dT = compute_nTdT(NT, DT)
-                            
-        results_dict = {'nS' : nS, 'dS' : dS, 'NT': NT, 'DT': DT, 
-                        'toymodel':args.toymodel}
-                          
-        outfile = open(os.path.join(BASE_PATH, 'results'), 'wb')
-        pickle.dump(results_dict, outfile)
-        outfile.close()     
-                                                                        
-        plt.show()
-                                                   
-    elif args.action == 'train':
+    if args.action == 'train':
 
         #create path              
         BASE_PATH, name = createPath(args)
@@ -302,7 +251,7 @@ if __name__ == '__main__':
         #******************************#
 
         for epoch in range(1, args.epochs + 1):
-            error_train = train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps_with_delay, args.training_method)
+            error_train = train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps, delay, args.training_method)
             error_test = evaluate(net, test_loader)
             error_train_tab.append(error_train)
             error_test_tab.append(error_test) ;
