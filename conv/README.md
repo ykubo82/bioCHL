@@ -15,7 +15,7 @@ If you want to check the learning curves for this model, go to the directory "ep
 ```
 python plotFunctions.py
 ```
-It shows you the learning curves for training and testing. Also, it shows you the best testing error so far. <br/>
+It will plot the learning curves for training and testing. Also, it will show you the best testing error so far. <br/>
 
 This model tested on: <br/>
 Python 3.7.9 <br/>
