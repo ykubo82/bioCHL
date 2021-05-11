@@ -1,7 +1,7 @@
 # Convolutional neural Nntwork with the predictions
 
 These codes are based on "Updates of Equilibrium Prop Match Gradients of Backprop Through Time in an RNN with Static Input" (https://github.com/ernoult/updatesEPgradientsBPTT)
-We modified the codes for our prediction model.
+We modified the codes for our prediction model.<br/>
 If you want to run the code, go:
 ```
 python main.py 
