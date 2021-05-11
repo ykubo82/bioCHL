@@ -1,4 +1,4 @@
-# Convolutional neural network with the predictions
+# Convolutional neural network with the predictions on CIFAR-10
 
 These codes are based on "Updates of Equilibrium Prop Match Gradients of Backprop Through Time in an RNN with Static Input" (https://github.com/ernoult/updatesEPgradientsBPTT)
 We modified the codes for our prediction model on CIFAR-10.<br/>
