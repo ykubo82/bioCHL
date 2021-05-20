@@ -190,7 +190,7 @@ else:
     transforms=[torchvision.transforms.ToTensor(),ReshapeTransform((-1,))]
 
 
-################################# these argumentations are based on https://github.com/Laborieux-Axel/Equilibrium-Propagation ##################################################
+################################# these augmentations are based on https://github.com/Laborieux-Axel/Equilibrium-Propagation ##################################################
 
 transform_train = torchvision.transforms.Compose([torchvision.transforms.RandomHorizontalFlip(0.5),
                                                   torchvision.transforms.RandomCrop(size=[32,32], padding=4, padding_mode='edge'),
