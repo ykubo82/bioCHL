@@ -43,8 +43,6 @@ class convEP(nn.Module):
         conv   = nn.ModuleList([])
         fc     = nn.ModuleList([])      
         
-        # layer normalization        
-        cnv_bn = nn.ModuleList([])     
         self.fc_bn  = None
         
         size_convpool_tab = [input_size] 
@@ -61,10 +59,7 @@ class convEP(nn.Module):
                    
         self.conv   = conv
 
-        
-        # batch normalization
-        self.cnv_bn = cnv_bn        
-        
+                
         #Define pool operations          	
         self.pool = nn.MaxPool2d(args.Fpool, stride = args.Fpool, return_indices = True)	        
         self.unpool = nn.MaxUnpool2d(args.Fpool, stride = args.Fpool)    
