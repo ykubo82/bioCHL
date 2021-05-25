@@ -95,7 +95,6 @@ class convEP(nn.Module):
     def stepper(self, data, s, inds, target = None, beta = 0, return_derivatives = False, inplace = False): 
         
         dsdt       = []
-        dsdt_inter = []
         #CLASSIFIER PART
                               
         #last classifier layer
@@ -115,7 +114,6 @@ class convEP(nn.Module):
         #last conv layer
         s_pool, ind = self.pool(self.conv[0](s[self.nc + 1]))
         inds[self.nc] = ind
-        d_size = data.size()
         
         dsdt.append(-s[self.nc] + rho(s_pool + torch.mm(s[self.nc - 1], self.fc[- 1].weight).view(s[self.nc].size())))
         del s_pool, ind
