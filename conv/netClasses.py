@@ -135,7 +135,6 @@ class convEP(nn.Module):
             del s_pool, s_unpool, ind, output_size
             
        
-        # with batch normalization
         s_pool, ind = self.pool(self.conv[-1](data))
         
         inds[-1] = ind
