@@ -364,11 +364,9 @@ class convEP(nn.Module):
         return  gradconv, gradconv_bias, gradfc, gradfc_bias
                
     def updateWeights(self, beta, data, s, inds, seq, indseq, update_data_idx, epoch):
-       gradconv, gradconv_bias, gradfc, gradfc_bias  = self.computeGradients(beta, data, s, inds, seq, indseq, update_data_idx)
-       
+       gradconv, gradconv_bias, gradfc, gradfc_bias  = self.computeGradients(beta, data, s, inds, seq, indseq, update_data_idx)     
 
        lr_tab = self.lr_tab
-       epsilon = 1e-7
        
        for i in range(len(self.fc)):             
          self.fc[i].weight += lr_tab[i]*gradfc[i]
