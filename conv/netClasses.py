@@ -338,7 +338,7 @@ class convEP(nn.Module):
         #CLASSIFIER       
         for i in range(self.nc - 1):
             gradfc.append((1/(beta*batch_size))*(torch.mm(torch.transpose(s[i], 0, 1), s[i + 1]) - torch.mm(torch.transpose(seq[i], 0, 1), s[i + 1])))          
-            gradfc_bias.append((1/(beta*batch_size))*(seq[i] - seq[i]).sum(0))                                                                           
+            gradfc_bias.append((1/(beta*batch_size))*(s[i] - seq[i]).sum(0))                                                                           
 
        
         gradfc.append((1/(beta*batch_size))*(torch.mm(torch.transpose(s[self.nc - 1], 0, 1), s[self.nc].view(s[self.nc].size(0), -1)) - torch.mm(torch.transpose(seq[self.nc - 1], 0, 1), s[self.nc].view(s[self.nc].size(0), -1))))          
