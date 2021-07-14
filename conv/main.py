@@ -162,6 +162,8 @@ update_batch_size    = args.update_batch_size
 batch_size_test      = args.test_batch_size
 pred_inps            = args.pred_inps
 delay                = args.delay
+pred_inps_with_delay = pred_inps
+pred_inps_with_delay.append(delay)
 
 
 
@@ -251,7 +253,7 @@ if __name__ == '__main__':
         #******************************#
 
         for epoch in range(1, args.epochs + 1):
-            error_train = train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps, delay, args.training_method)
+            error_train = train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps_with_delay, args.training_method)
             error_test = evaluate(net, test_loader)
             error_train_tab.append(error_train)
             error_test_tab.append(error_test) ;
