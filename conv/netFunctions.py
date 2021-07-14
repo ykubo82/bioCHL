@@ -69,7 +69,7 @@ def predict_acts(store_inp_activations, neurons_phase2, update_data_idx, train_l
   return  neurons_phase2
 
 
-def train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps, delay, method): 
+def train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps_with_delay, method): 
     if not hasattr(net, 'C_tab'):
         net.train()
         loss_tot = 0
@@ -147,10 +147,6 @@ def train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps, de
         loss_tot = 0
         correct = 0
         criterion = nn.MSELoss(reduction = 'sum')
-
-        # append it and use this for getting the activations
-        pred_inps_with_delay = pred_inps
-        pred_inps_with_delay.append(delay)   
         
         if method == 'BPTT':
             for i in range(len(net.fc)):
