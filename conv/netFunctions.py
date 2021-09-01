@@ -202,7 +202,7 @@ def train(net, train_loader, epoch, batch_size, update_batch_size, pred_inps_wit
             elif method == 'eqprop':
                 with torch.no_grad():
                     # free phase
-                    seq, indseq, all_activations = net.forward(data, s, inds, pred_inps_with_delay)
+                    s, indseq, all_activations = net.forward(data, s, inds, pred_inps_with_delay)
                     pred = s[0].data.max(1, keepdim=True)[1]
                     loss = (1/(2*s[0].size(0)))*criterion(s[0], targets)
 
